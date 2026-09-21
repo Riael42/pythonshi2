@@ -24,7 +24,7 @@ def test_watering_system() -> None:
         water_plant("Tomato")
         water_plant("Lettuce")
         water_plant("Carrots")
-    finally:
+    finally: # close files, connections, sockets, locks, os files, etc
         print("-> Closing watering system <-")
 
     print("Testing invalid plants...")
@@ -36,7 +36,7 @@ def test_watering_system() -> None:
         print(f"Caught PlantError: {e}")
         print(".. ending tests and returning to main")
         return
-    finally:
+    finally: # close files, connections, sockets, locks, os files, etc
         print("-> Closing watering system <-")
 
 
